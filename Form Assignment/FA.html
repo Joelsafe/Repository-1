@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Science CLub</title>
+  <link rel="stylesheet" href="./FA.css">
+  <script src="jquery-3.7.1.slim.js" type="text/javascript"></script>
+</head>
+<body>
+ 
+
+
+<div class="center">
+  <h1>Science Club Registration Form</h1>
+  <form>
+    
+    
+    <div class="inputbox">
+      <input type="text" required="required">
+      <span>Name</span>
+    </div>
+    <div class="inputbox">
+      <input type="text" required="required">
+      <span>Class</span>
+    </div>
+    <div class="inputbox">
+        <input type="text" required="required">
+        <span>Department</span>
+      </div>
+    <div class="inputbox">
+      <input type="text" required="required">
+      <span>Email</span>
+    </div>
+    <div class="inputbox">
+      <input type="text" required="required">
+      <span>Password</span>
+    </div>
+    <div class="inputbox">
+      <input type="button" value="submit">
+
+    </div>
+  </form>
+
+  <div id="clickme" class="clickme" style="width: 400px; height: 400px; background-color: aquamarine;">
+
+  </div> 
+  
+<button id="hello">click me</button>
+
+<script>
+    const browser = $(window)
+browser.ready(function (){
+    $('#hello').click(function(){
+        $('#clickme').css('background', 'red')
+    })
+    $('#clickme').toggle('4000')
+
+}
+)
+
+
+
+</script>
+
+</div>
+
+
+
+
+
+
+
+</body>
+</html>
