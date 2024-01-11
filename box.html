@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Change Color with jQuery</title>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script>
+  
+        $(document).ready(function() {
+          
+          $('#colorBox').on('click', function() {
+            
+            $(this).css('background-color', '#ff0000'); 
+          });
+        });
+      </script>
+  <style>
+    
+    #colorBox {
+      width: 100px;
+      height: 100px;
+      background-color: #ccc;
+      cursor: pointer; 
+    }
+  </style>
+</head>
+<body>
+
+<div id="colorBox"></div>
+
+
+
+</body>
+</html>
